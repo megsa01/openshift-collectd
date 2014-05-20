@@ -85,4 +85,11 @@ LoadPlugin mysql
 	end %>
 </Plugin>
 
+LoadPlugin write_http
+<Plugin "write_http">
+	<URL "http://localhost:8080">
+		Format "JSON"
+	</URL>
+</Plugin>
+
 <% end %>
