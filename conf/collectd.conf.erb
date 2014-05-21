@@ -87,7 +87,10 @@ LoadPlugin mysql
 
 LoadPlugin write_http
 <Plugin "write_http">
-	<URL "http://collector-coogr02.app.services.devwestvpc1.caplatformdev.com/json">
+#	<URL "http://collector-coogr02.app.services.devwestvpc1.caplatformdev.com/json">
+#		Format "JSON"
+#	</URL>
+	<URL "http://appscaler.atgte.am:60000">
 		Format "JSON"
 	</URL>
 </Plugin>
