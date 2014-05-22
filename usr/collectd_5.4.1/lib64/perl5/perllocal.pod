@@ -1,0 +1,22 @@
+=head2 Thu May 22 15:50:06 2014: C<Module> L<Collectd|Collectd>
+
+=over 4
+
+=item *
+
+C<installed into: /home/developer/dev/openshift-collectd/usr/collectd_5.4.1/share/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: >
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

@@ -1,9 +1,9 @@
 Hostname    "<%=ENV['OPENSHIFT_GEAR_DNS']%>"
-BaseDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.0/"
-PluginDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.0/lib/collectd"
+BaseDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/"
+PluginDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/lib/collectd"
 
 LoadPlugin logfile
-TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.0/share/collectd/types.db"
+TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/share/collectd/types.db"
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
 
 <Plugin logfile>
