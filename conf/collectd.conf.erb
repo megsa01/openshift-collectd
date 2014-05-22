@@ -48,13 +48,6 @@ LoadPlugin disk
 </Plugin>
 
 
-#LoadPlugin rrdtool
-#<Plugin "rrdtool">
-#  DataDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>data"
-#  StoreRates true
-#</Plugin>
-
-
 LoadPlugin write_http
 <Plugin "write_http">
 	<URL "http://collectdlistener-grctest.rhcloud.com/">
