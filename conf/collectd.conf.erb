@@ -13,11 +13,11 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
   PrintSeverity false
 </Plugin>
 
-#LoadPlugin exec
+LoadPlugin exec
 
-#<Plugin exec>
-#  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
-#</Plugin>
+<Plugin exec>
+  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
+</Plugin>
 
 
 
