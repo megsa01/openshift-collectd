@@ -1,2 +1,5 @@
 *.sublime-project
 *.sublime-workspace
+
+# Mac stuff
+.DS_Store
