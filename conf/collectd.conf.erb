@@ -7,7 +7,7 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/share/collectd/types.d
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
 
 <Plugin logfile>
-  LogLevel debug
+  LogLevel info
   File "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>log/collectd.log"
   Timestamp true
   PrintSeverity false
@@ -19,16 +19,8 @@ LoadPlugin exec
   Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
 </Plugin>
 
-
-
-LoadPlugin processes
-<Plugin "processes">
-  ProcessMatch "/^java/"
-  ProcessMatch "/^node/"
-  ProcessMatch "/^php/"
-  ProcessMatch "/^ruby/"
-  ProcessMatch "/^python/"
-</Plugin>
+LoadPlugin cpu
+LoadPlugin interface
 
 LoadPlugin load
 <Plugin "load">
