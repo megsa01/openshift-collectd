@@ -13,11 +13,11 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
   PrintSeverity false
 </Plugin>
 
-LoadPlugin exec
+#LoadPlugin exec
 
-<Plugin exec>
-  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
-</Plugin>
+#<Plugin exec>
+#  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
+#</Plugin>
 
 
 
@@ -47,43 +47,14 @@ LoadPlugin disk
   IgnoreSelected false
 </Plugin>
 
-LoadPlugin network
+LoadPlugin cpu
 
-<% if ENV['OPENSHIFT_GEAR_DNS']!=ENV['OPENSHIFT_APP_DNS'] %>
+#LoadPlugin rrdtool
+#<Plugin "rrdtool">
+#  DataDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>data"
+#  StoreRates true
+#</Plugin>
 
-<Plugin "network">
-  Server "<%=ENV['OPENSHIFT_COLLECTD_PRIVATE_IP']%>" "<%=ENV['OPENSHIFT_COLLECTD_PRIVATE_PORT']%>"
-</Plugin>
-
-<% else %>
-
-<Plugin "network">
-  Listen "<%=ENV['OPENSHIFT_COLLECTD_PRIVATE_IP']%>" "<%=ENV['OPENSHIFT_COLLECTD_PRIVATE_PORT']%>"
-</Plugin>
-
-
-LoadPlugin rrdtool
-<Plugin "rrdtool">
-  DataDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>data"
-  StoreRates true
-</Plugin>
-
-LoadPlugin mysql
-<Plugin "mysql">
-	<% ENV.each do |env| 
-		envvar = env[0].to_s;
-		m=/^DSS_DATASTORE_NAME_(.+)/.match(envvar)
-		m.untaint
-		if m %>
-		<Database "<%=ENV[m[0].untaint]%>">
-		   Host "<%=ENV[('DSS_HOST_'+m[1]).untaint]%>"
-		   User "<%=ENV[('DSS_ADMIN_'+m[1]).untaint ]%>"
-		   Password "<%=ENV[('DSS_PASSWORD_'+m[1]).untaint]%>"
-		   Port "<%=ENV[('DSS_PORT_'+m[1]).untaint]%>"
-		</Database>
-		<% end 
-	end %>
-</Plugin>
 
 LoadPlugin write_http
 <Plugin "write_http">
