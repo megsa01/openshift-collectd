@@ -26,7 +26,7 @@ Group-Overrides:
   - components:
     - collectd-5.4.1
     - web_framework
-Source-Url: https://github.com/celer/openshift-collectd.git
+Source-Url: https://github.com/gcoonrod/openshift-collectd.git
 Endpoints:
   - Private-IP-Name: PRIVATE_IP
     Private-Port-Name: PRIVATE_PORT
