@@ -19,27 +19,6 @@ LoadPlugin exec
   Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
 </Plugin>
 
-LoadPlugin cpu
-LoadPlugin interface
-
-LoadPlugin load
-<Plugin "load">
-</Plugin>
-
-LoadPlugin memory
-<Plugin "memeory">
-</Plugin>
-
-
-LoadPlugin disk
-<Plugin "disk">
-  Disk "/^sd/"
-  Disk "/^xv/"
-  Disk "/^hd/"
-  IgnoreSelected false
-</Plugin>
-
-
 LoadPlugin write_http
 <Plugin "write_http">
 	<URL "http://collectdlistener-grctest.rhcloud.com/">

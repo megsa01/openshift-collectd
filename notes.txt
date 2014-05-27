@@ -1,0 +1,6 @@
+localhost/ca-saas/odata/$1/Appscaler/gearId/collectdStats
+
+$1: tenantId, system default, AppInstanceId
+service_id: "Appscaler"
+
+com.ca.platform.appscaler.acme.collectd
