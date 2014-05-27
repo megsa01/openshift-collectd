@@ -1,6 +1,6 @@
 # This script is tailored to collectd openshift specfic metrics
 
-INTERVAL=10
+INTERVAL=1
 HOSTNAME="${COLLECTD_HOSTNAME:-localhost}"
 
 while `true`
@@ -13,7 +13,8 @@ do
   VALUE=$(oo-cgroup-read cpuacct.stat)
   SYS=`echo $VALUE | cut -f 4 -d " "`
   USER=`echo $VALUE |cut -f 2 -d " "`
-  echo "PUTVAL \"$HOSTNAME/gear_cpu_usage/gear_cpu\" interval=$INTERVAL N:$USER:$SYS"
+  echo "PUTVAL \"$HOSTNAME/gear_cpu/gear_cpu_user\" interval=$INTERVAL N:$USER"
+  echo "PUTVAL \"$HOSTNAME/gear_cpu/gear_cpu_system\" interval=$INTERVAL N:$SYS"
 
   # VALUE=`netstat -npt | grep tcp | grep -v "-" | awk '{ print $6}' | sort | uniq -c`
   # ESTABLISHED=`echo $VALUE | grep ESTABLISHED | awk '{print $1 }'`

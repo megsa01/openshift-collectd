@@ -21,7 +21,7 @@ LoadPlugin exec
 
 LoadPlugin write_http
 <Plugin "write_http">
-	<URL "http://collectdlistener-grctest.rhcloud.com/ca-saas/odata/<%=ENV['OPENSHIFT_APP_UUID']%>/Appscaler/<%=ENV['OPENSHIFT_GEAR_UUID']%>/collectdstats">
+	<URL "http://collectdlistener-grctest.rhcloud.com/ca-saas/odata/<%=ENV['APP_INSTANCE_ID']%>/Appscaler/<%=ENV['OPENSHIFT_GEAR_UUID']%>/collectdstats">
 		Format "JSON"
 	</URL>
 </Plugin>
