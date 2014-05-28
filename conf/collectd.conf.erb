@@ -8,7 +8,7 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db.custom"
 
 <Plugin logfile>
-  LogLevel info
+  LogLevel debug
   File "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>log/collectd.log"
   Timestamp true
   PrintSeverity false
