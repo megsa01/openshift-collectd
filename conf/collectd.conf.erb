@@ -7,7 +7,7 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/share/collectd/types.d
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
 
 <Plugin logfile>
-  LogLevel debug
+  LogLevel info
   File "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>log/collectd.log"
   Timestamp true
   PrintSeverity false
@@ -16,41 +16,12 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
 LoadPlugin exec
 
 <Plugin exec>
-  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
+  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/openshift.sh"
 </Plugin>
-
-
-
-LoadPlugin processes
-<Plugin "processes">
-  ProcessMatch "/^java/"
-  ProcessMatch "/^node/"
-  ProcessMatch "/^php/"
-  ProcessMatch "/^ruby/"
-  ProcessMatch "/^python/"
-</Plugin>
-
-LoadPlugin load
-<Plugin "load">
-</Plugin>
-
-LoadPlugin memory
-<Plugin "memeory">
-</Plugin>
-
-
-LoadPlugin disk
-<Plugin "disk">
-  Disk "/^sd/"
-  Disk "/^xv/"
-  Disk "/^hd/"
-  IgnoreSelected false
-</Plugin>
-
 
 LoadPlugin write_http
 <Plugin "write_http">
-	<URL "http://collectdlistener-grctest.rhcloud.com/">
+	<URL "http://collectdlistener-grctest.rhcloud.com/ca-saas/odata/<%=ENV['APP_INSTANCE_ID']%>/Appscaler/<%=ENV['OPENSHIFT_GEAR_UUID']%>/collectdstats">
 		Format "JSON"
 	</URL>
 </Plugin>
