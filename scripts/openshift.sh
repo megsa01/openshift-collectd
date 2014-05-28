@@ -9,19 +9,19 @@ do
   # MAX_USED=$(oo-cgroup-read memory.max_usage_in_bytes)
   # LIMIT=$(oo-cgroup-read memory.limit_in_bytes)
   # echo "PUTVAL \"$HOSTNAME/gear_memory/gear_memory\" interval=$INTERVAL N:$USED:$MAX_USED:$LIMIT"
- 
+
   VALUE=$(oo-cgroup-read cpuacct.stat)
   SYS=`echo $VALUE | cut -f 4 -d " "`
   USER=`echo $VALUE |cut -f 2 -d " "`
   echo "PUTVAL \"$HOSTNAME/gear_cpu/gear_cpu_user\" interval=$INTERVAL N:$USER"
-  echo "PUTVAL \"$HOSTNAME/gear_cpu/gear_cpu_system\" interval=$INTERVAL N:$SYS"
+  #echo "PUTVAL \"$HOSTNAME/gear_cpu/gear_cpu_system\" interval=$INTERVAL N:$SYS"
 
   # VALUE=`netstat -npt | grep tcp | grep -v "-" | awk '{ print $6}' | sort | uniq -c`
   # ESTABLISHED=`echo $VALUE | grep ESTABLISHED | awk '{print $1 }'`
   # CLOSED_WAIT=`echo $VALUE | grep CLOSED_WAIT | awk '{print $1 }'`
   # TIME_WAIT=`echo $VALUE | grep TIME_WAIT | awk '{print $1 }'`
   # LISTENING=`netstat -lnpt | grep -v "-" | grep tcp | wc -l`
-  
+
   # echo "PUTVAL \"$HOSTNAME/gear_network/gear_connections\" interval=$INTERVAL N:${ESTABLISHED:-0}:${TIME_WAIT:-0}:${CLOSED_WAIT:-0}:${LISTENING:-0}"
  
   # OLD_IFS=$IFS
@@ -36,8 +36,8 @@ do
   #   echo "PUTVAL \"$HOSTNAME/conn_to_$HOST/conn_time\" interval=$INTERVAL N:$R"
   # done 
   # IFS=OLD_IFS
-   
-	 
+
+ 
 # This captures lots of details about memory usage on the gear, perhaps a bit too much
 #  VALUE=$(oo-cgroup-read memory.stat)
 #  OLD_IFS=IFS;
