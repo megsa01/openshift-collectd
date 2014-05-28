@@ -16,7 +16,7 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
 LoadPlugin exec
 
 <Plugin exec>
-  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>/scripts/openshift.sh"
+  Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/openshift.sh"
 </Plugin>
 
 LoadPlugin write_http
