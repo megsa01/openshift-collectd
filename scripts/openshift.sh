@@ -13,8 +13,8 @@ do
   VALUE=$(oo-cgroup-read cpuacct.stat)
   SYS=`echo $VALUE | cut -f 4 -d " "`
   USER=`echo $VALUE |cut -f 2 -d " "`
-  echo "PUTVAL \"$HOSTNAME/gear_cpu/gear_cpu_user\" interval=$INTERVAL N:$USER"
-  #echo "PUTVAL \"$HOSTNAME/gear_cpu/gear_cpu_system\" interval=$INTERVAL N:$SYS"
+  echo "PUTVAL \"$HOSTNAME/gear_cpu_user/gear_cpu_user\" interval=$INTERVAL N:$USER"
+  echo "PUTVAL \"$HOSTNAME/gear_cpu_system/gear_cpu_system\" interval=$INTERVAL N:$SYS"
 
   # VALUE=`netstat -npt | grep tcp | grep -v "-" | awk '{ print $6}' | sort | uniq -c`
   # ESTABLISHED=`echo $VALUE | grep ESTABLISHED | awk '{print $1 }'`

@@ -5,6 +5,7 @@ PluginDir "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/lib/collectd"
 LoadPlugin logfile
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/share/collectd/types.db"
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
+TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db.custom"
 
 <Plugin logfile>
   LogLevel info

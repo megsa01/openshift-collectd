@@ -1,380 +1,275 @@
-[
-  {
-    "values": [
-      1.57981E+9
+{
+    "payload": [
+        {
+            "values": [
+                965741
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307776.259,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                315353
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307777.337,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_user",
+            "plugin_instance": "",
+            "type": "gear_cpu_user",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                965744
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307777.337,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                965750
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307778.397,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                315356
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307778.397,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_user",
+            "plugin_instance": "",
+            "type": "gear_cpu_user",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                965750
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307779.462,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                315360
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307779.462,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_user",
+            "plugin_instance": "",
+            "type": "gear_cpu_user",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                315363
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307780.532,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_user",
+            "plugin_instance": "",
+            "type": "gear_cpu_user",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                965753
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307780.533,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                315366
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307781.598,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_user",
+            "plugin_instance": "",
+            "type": "gear_cpu_user",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                965757
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307781.598,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                315369
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307782.666,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_user",
+            "plugin_instance": "",
+            "type": "gear_cpu_user",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                965760
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307782.666,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                315372
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307783.736,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_user",
+            "plugin_instance": "",
+            "type": "gear_cpu_user",
+            "type_instance": ""
+        },
+        {
+            "values": [
+                965769
+            ],
+            "dstypes": [
+                "counter"
+            ],
+            "dsnames": [
+                "value"
+            ],
+            "time": 1401307783.736,
+            "interval": 1,
+            "host": "roadrunner19p259kzpfbetwghijp610-coogr02.app.services.devwestvp",
+            "plugin": "gear_cpu_system",
+            "plugin_instance": "",
+            "type": "gear_cpu_system",
+            "type_instance": ""
+        }
     ],
-    "dstypes": [
-      "gauge"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "memory",
-    "plugin_instance": "",
-    "type": "memory",
-    "type_instance": "inactive"
-  },
-  {
-    "values": [
-      6.17273E+9
-    ],
-    "dstypes": [
-      "gauge"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "memory",
-    "plugin_instance": "",
-    "type": "memory",
-    "type_instance": "free"
-  },
-  {
-    "values": [
-      196899
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "3",
-    "type": "cpu",
-    "type_instance": "user"
-  },
-  {
-    "values": [
-      0
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "3",
-    "type": "cpu",
-    "type_instance": "nice"
-  },
-  {
-    "values": [
-      85731
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "3",
-    "type": "cpu",
-    "type_instance": "system"
-  },
-  {
-    "values": [
-      126987501
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "3",
-    "type": "cpu",
-    "type_instance": "idle"
-  },
-  {
-    "values": [
-      2677585
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "4",
-    "type": "cpu",
-    "type_instance": "user"
-  },
-  {
-    "values": [
-      0
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "4",
-    "type": "cpu",
-    "type_instance": "nice"
-  },
-  {
-    "values": [
-      1086747
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "4",
-    "type": "cpu",
-    "type_instance": "system"
-  },
-  {
-    "values": [
-      123509429
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "4",
-    "type": "cpu",
-    "type_instance": "idle"
-  },
-  {
-    "values": [
-      198805
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "5",
-    "type": "cpu",
-    "type_instance": "user"
-  },
-  {
-    "values": [
-      0
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "5",
-    "type": "cpu",
-    "type_instance": "nice"
-  },
-  {
-    "values": [
-      87086
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "5",
-    "type": "cpu",
-    "type_instance": "system"
-  },
-  {
-    "values": [
-      126983208
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "5",
-    "type": "cpu",
-    "type_instance": "idle"
-  },
-  {
-    "values": [
-      2685876
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "6",
-    "type": "cpu",
-    "type_instance": "user"
-  },
-  {
-    "values": [
-      0
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "6",
-    "type": "cpu",
-    "type_instance": "nice"
-  },
-  {
-    "values": [
-      1088768
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "6",
-    "type": "cpu",
-    "type_instance": "system"
-  },
-  {
-    "values": [
-      123497782
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "6",
-    "type": "cpu",
-    "type_instance": "idle"
-  },
-  {
-    "values": [
-      199090
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "7",
-    "type": "cpu",
-    "type_instance": "user"
-  },
-  {
-    "values": [
-      0
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "7",
-    "type": "cpu",
-    "type_instance": "nice"
-  },
-  {
-    "values": [
-      88191
-    ],
-    "dstypes": [
-      "derive"
-    ],
-    "dsnames": [
-      "value"
-    ],
-    "time": 1400200091.681,
-    "interval": 1.000,
-    "host": "localhost",
-    "plugin": "cpu",
-    "plugin_instance": "7",
-    "type": "cpu",
-    "type_instance": "system"
-  }
-]
+    "url": "/ca-saas/odata/5oDFA1VlVUTu0GdzrLqbiT/Appscaler/5373d2af57521284ac0051c2/collectdstats"
+}
