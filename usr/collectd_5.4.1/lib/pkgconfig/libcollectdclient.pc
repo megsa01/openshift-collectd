@@ -1,4 +1,4 @@
-prefix=/home/developer/dev/openshift-collectd/usr/collectd_5.4.1
+prefix=/home/developer/dev/openshift-collectd/collectd/5.4.1
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

@@ -1,4 +1,4 @@
-/home/developer/dev/openshift-collectd/usr/collectd_5.4.1/share/man/man3/Collectd::Unixsock.3pm
-/home/developer/dev/openshift-collectd/usr/collectd_5.4.1/share/perl5/Collectd.pm
-/home/developer/dev/openshift-collectd/usr/collectd_5.4.1/share/perl5/Collectd/Plugins/OpenVZ.pm
-/home/developer/dev/openshift-collectd/usr/collectd_5.4.1/share/perl5/Collectd/Unixsock.pm
+/home/developer/dev/openshift-collectd/collectd/5.4.1/share/man/man3/Collectd::Unixsock.3pm
+/home/developer/dev/openshift-collectd/collectd/5.4.1/share/perl5/Collectd.pm
+/home/developer/dev/openshift-collectd/collectd/5.4.1/share/perl5/Collectd/Plugins/OpenVZ.pm
+/home/developer/dev/openshift-collectd/collectd/5.4.1/share/perl5/Collectd/Unixsock.pm

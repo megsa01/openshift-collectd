@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/developer/dev/openshift-collectd/usr/collectd_5.4.1/lib/collectd'
+libdir='/home/developer/dev/openshift-collectd/collectd/5.4.1/lib/collectd'
