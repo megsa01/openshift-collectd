@@ -1,6 +1,6 @@
 # This script is tailored to collectd openshift specfic metrics
 
-INTERVAL=1
+INTERVAL=10
 HOSTNAME="${COLLECTD_HOSTNAME:-localhost}"
 
 while `true`
