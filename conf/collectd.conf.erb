@@ -20,6 +20,9 @@ LoadPlugin exec
   Exec "<%=ENV['USER']%>" "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/openshift.sh"
 </Plugin>
 
+LoadPlugin cpu
+LoadPlugin load
+
 LoadPlugin write_http
 <Plugin "write_http">
 	<URL "http://collectdlistener-grctest.rhcloud.com/ca-saas/odata/<%=ENV['APP_INSTANCE_ID']%>/Appscaler/<%=ENV['OPENSHIFT_GEAR_UUID']%>/collectdstats">
