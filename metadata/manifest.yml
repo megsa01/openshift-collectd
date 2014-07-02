@@ -5,7 +5,7 @@ Architecture: x86_64
 Display-Name: collectd 5.4.1
 Description: collectd is a daemon which collects system performance statistics
 Version: '5.4.1'
-Cartridge-Version: 0.0.1
+Cartridge-Version: 0.0.2
 Cartridge-Vendor: gcoonrod
 License: GPL
 Categories:

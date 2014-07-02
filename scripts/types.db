@@ -1,6 +1,9 @@
-conn_time value:GAUGE:0:U
-gear_connections established:GAUGE:0:U, time_wait:GAUGE:0:U, closed_wait:GAUGE:0:U, listening:GAUGE:0:U
-gear_memory used:GAUGE:0:U, max_used:GAUGE:0:U, limit:GAUGE:0:U
+conn_time           value:GAUGE:0:U
+gear_connections    established:GAUGE:0:U, time_wait:GAUGE:0:U, closed_wait:GAUGE:0:U, listening:GAUGE:0:U
+gear_memory         used:GAUGE:0:U, max_used:GAUGE:0:U, limit:GAUGE:0:U
 
-gear_cpu_user user:COUNTER:0:U
-gear_cpu_sys sys:COUNTER:0:U
+gear_cpu_user       user:COUNTER:0:U
+gear_cpu_sys        sys:COUNTER:0:U
+
+cpu_util            value:GAUGE:0:U
+disk_iops           value:GAUGE:0:U

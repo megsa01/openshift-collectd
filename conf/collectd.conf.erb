@@ -7,11 +7,13 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>collectd/5.4.1/share/collectd/types.d
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db"
 TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db.custom"
 
+Interval 10
+
 <Plugin logfile>
   LogLevel info
   File "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>log/collectd.log"
   Timestamp true
-  PrintSeverity false
+  PrintSeverity true
 </Plugin>
 
 LoadPlugin exec
@@ -22,6 +24,8 @@ LoadPlugin exec
 
 LoadPlugin cpu
 LoadPlugin load
+LoadPlugin disk
+LoadPlugin memory
 
 LoadPlugin write_http
 <Plugin "write_http">

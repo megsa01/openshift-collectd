@@ -1,2 +1,4 @@
-gear_cpu_user value:COUNTER:0:U
+gear_cpu_user   value:COUNTER:0:U
 gear_cpu_system value:COUNTER:0:U
+cpu_util        value:GAUGE:0:U
+disk_iops       value:GAUGE:0:U
