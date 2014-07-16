@@ -10,7 +10,7 @@ TypesDB "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>scripts/types.db.custom"
 Interval 10
 
 <Plugin logfile>
-  LogLevel info
+  LogLevel debug
   File "<%=ENV['OPENSHIFT_COLLECTD_DIR']%>log/collectd.log"
   Timestamp true
   PrintSeverity true
