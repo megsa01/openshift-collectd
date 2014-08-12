@@ -25,6 +25,6 @@ while sleep "$INTERVAL"; do
   prev_total=$total
   prev_idle=$idle
 
-  iops=`iostat -d | awk 'NR <= 3 {next};{SUM += $2} END {print SUM}'`
+  iops=`iostat -d 1 2 | awk 'NR <= 7 {next};{SUM += $2} END {print SUM}'`
   echo "PUTVAL $HOSTNAME/disk_iops/disk_iops interval=$INTERVAL N:$iops"
 done
