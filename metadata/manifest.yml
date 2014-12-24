@@ -27,7 +27,6 @@ Group-Overrides:
   - components:
     - web_framework
     - haproxy
-    - collectd
 Endpoints:
   - Private-IP-Name: PRIVATE_IP
     Private-Port-Name: PRIVATE_PORT
