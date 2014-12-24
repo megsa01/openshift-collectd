@@ -25,7 +25,6 @@ Cart-Data:
   - Key: OPENSHIFT_COLLECTD_PUBLIC_SERVER_PORT 
 Group-Overrides:
   - components:
-    - collectd-5.4.1
     - web_framework
     - haproxy-1.4
     - haproxy
