@@ -26,7 +26,6 @@ Cart-Data:
 Group-Overrides:
   - components:
     - web_framework
-    - haproxy-1.4
     - haproxy
     - collectd-5.4.1
 Endpoints:
