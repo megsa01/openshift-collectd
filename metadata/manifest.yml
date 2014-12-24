@@ -10,8 +10,6 @@ Cartridge-Version: "0.0.2"
 Cartridge-Vendor: gcoonrod
 License: GPL
 Categories:
-  - service
-  - database
   - embedded
   - plugin
 Website: http://collectd.org
